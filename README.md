@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### Deployment Link
-https://movie-clone-project.vercel.app/S
+https://movie-clone-project.vercel.app/

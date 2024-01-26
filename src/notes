@@ -1,0 +1,28 @@
+** FETCH : it always return a promise
+>>>> it include 
+        .then()
+        .catch()
+        .finally()
+
+
+** We take the the API_KEY from TMDB database and integrated it with our system and check into the browser part (References) to call that API's , to fetch the all data or not   
+
+
+>> i have json data into my fetch part and i console it but where should i store it?
+-----> ** I should be having a state which i keep all the movie data (json data) , thats why we use useState hook and now all json data we store into setMovies
+
+
+
+**************************************
+>> When we use useState and cosole it movies then that data will be rerended again and again & it takes a loop 
+
+---> The component movies will be rerendered, when rerendered happend which means fetch part was called again, so again it will fetch 
+---> we want that perticular fetch part from movie only gets one time, no matter it rerender or anything thats why we have useEffect to rescue
+---> like this
+  useEffect(() => {
+      getMovies();
+    }, [getMovies or empty array]);
+
+
+
+**** We map the same component in same page inside the return part    
